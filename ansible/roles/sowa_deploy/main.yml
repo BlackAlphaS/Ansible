@@ -1,0 +1,10 @@
+---
+
+- name: Copy files form agent to target host
+  copy:
+    src: {{ working_directory }}/scripts/
+    dest: {{ target_directory }}
+    owner: {{ user }}
+    group: {{ group }}
+    mode: 0644
+    remote_src: no

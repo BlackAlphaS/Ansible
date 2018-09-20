@@ -1,0 +1,8 @@
+ansible_connection: ssh
+ansible_user: ubuntu
+ansible_ssh_pass: ubuntu
+
+user: ubuntu
+group: ubuntu
+working_directory: {{ lookup('env','WORKSPACE') }}
+target_directory: /tmp/
